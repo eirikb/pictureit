@@ -22,6 +22,7 @@ div {
 	maring-bottom: 30px;
 }
 .image {
+	border-style: none;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
