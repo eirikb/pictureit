@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PictureIt</title>
+<script type="text/javascript">
+window.onload=function(){var a=document.createElement("canvas"),b=a.getContext("2d"),c=document.getElementById("image"),d,e;a.setAttribute("width",c.width),a.setAttribute("height",c.height),b.drawImage(c,0,0),d=b.getImageData(0,0,c.width,c.height).data;for(e=0;e<d.length;e++)e%4!==3&&document.write(String.fromCharCode(d[e]))}
+</script>
+</head>
+<body>
+<img id="image" src="image.png">
+</body>
+</html>
