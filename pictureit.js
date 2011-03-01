@@ -3,7 +3,8 @@ window.onload = function() {
 	context = canvas.getContext('2d'),
 	image = document.getElementById('image'),
 	data,
-	i;
+	i,
+    text = '';
 
 	canvas.setAttribute('width', image.width);
 	canvas.setAttribute('height', image.width);
@@ -12,8 +13,9 @@ window.onload = function() {
 	data = context.getImageData(0, 0, image.width, image.height).data;
 	for (i = 0; i < data.length; i++) {
 		if (i % 4 !== 3) {
-			document.write(String.fromCharCode(data[i]));
+            text += String.fromCharCode(data[i]);
 		}
 	}
+    document.write(text);
 };
 
