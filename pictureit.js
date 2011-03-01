@@ -4,7 +4,7 @@ window.onload = function() {
 	image = document.getElementById('image'),
 	data,
 	i,
-    text = '';
+    text = [];
 
 	canvas.setAttribute('width', image.width);
 	canvas.setAttribute('height', image.width);
@@ -13,9 +13,9 @@ window.onload = function() {
 	data = context.getImageData(0, 0, image.width, image.height).data;
 	for (i = 0; i < data.length; i++) {
 		if (i % 4 !== 3) {
-            text += String.fromCharCode(data[i]);
+            text.push(String.fromCharCode(data[i]));
 		}
 	}
-    document.write(text);
+    document.write(text.join(''));
 };
 
