@@ -1,31 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>PictureIt</title>
-        <script type="text/javascript">
-            window.onload = function() {
-                var canvas = document.createElement('canvas'),
-                    context = canvas.getContext('2d'),
-                    image = document.getElementById('image'),
-                    data,
-                    i,
-                    text = [];
+	<head>
+		<title>PictureIt</title>
+		<script>
+		window.onload = function() {
+			var canvas = document.createElement('canvas'),
+				context = canvas.getContext('2d'),
+				image = document.getElementById('image'),
+				data,
+				text = [];
+				
+			canvas.setAttribute( 'width', image.width );
+			canvas.setAttribute( 'height', image.width );
+			context.drawImage( image, 0, 0 );
+			data = context.getImageData( 0, 0, image.width, image.height ).data;
+			
+			for ( var i = 0, len = data.length; i < len; i++ ) {
+				if ( i % 4 !== 3 ) {
+					text.push( String.fromCharCode( data[i] ) );
+				}
+			}
 
-                canvas.setAttribute('width', image.width);
-                canvas.setAttribute('height', image.width);
-
-                context.drawImage(image, 0, 0);
-                data = context.getImageData(0, 0, image.width, image.height).data;
-                for (i = 0; i < data.length; i++) {
-                    if (i % 4 !== 3) {
-                        text.push(String.fromCharCode(data[i]));
-                    }
-                }
-                document.write(text.join(''));
-            };
-        </script>
-    </head>
-    <body>
-        <img id="image" src="image.png">
-    </body>
+			document.body.innerHTML = text.join('');
+		};
+		</script>
+	</head>
+	<body>
+		<img id="image" src="image.png">
+	</body>
 </html>
