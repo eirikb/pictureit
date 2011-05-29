@@ -44,7 +44,7 @@
     <p>This site looks like this:</p>
     <img src="image.png">
     <p>Not kidding, this image is this site - with markup, styles, scripts AND IMAGES!</p>
-    <p>I dare you to <b><a href="view-source:http://eirikb.s3-website-eu-west-1.amazonaws.com" target="_blank">look at the page source</a></b></p>
+    <p>I dare you to <b><a href="view-source:http://eirikb.github.com/pictureit/" target="_blank">look at the page source</a></b></p>
     <h2>How it works</h2>
     <p>You might wonder how I'm able to accomplish this, but in reality it's quite simple.</p>
     <p>I use RGB values to store <a href="http://www.asciitable.com/">ASCII</a> characters.<br/>
