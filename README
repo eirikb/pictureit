@@ -1,6 +1,0 @@
-How to use pictureit.jar:  
-java -jar pictureit.jar testfile.txt  
-This will create image.png from the textfile
-
-src/no/eirikb/picturetit/PictureIt.java is a simple java-program which can read a text file and store the characters as RGB values in an image.  
-pictureit.js is a simple JavaSript which can read the RGB pixel values from an image and document.write them as characters.
