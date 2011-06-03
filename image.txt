@@ -60,7 +60,7 @@
         and for the next (' lo'): <br/> 
         <i>getRaster().setPixel(1, 0, {108, 111, 32 });</i><br/>
         And continue until all bytes are stored in the image. Note that I need to fill up the rest of the pixels with spaces.<br />
-        I have made a simple java-program that can do this, and the source for this is on <a href="https://github.com/eirikb/pictureit/blob/master/src/no/eirikb/pictureit/PictureIt.java">github</a>.
+        I have made a simple java-program that can do this, and the source for this is on <a href="https://github.com/eirikb/pictureit/blob/master/java/src/no/eirikb/pictureit/PictureIt.java">github</a>.
     </p>    
     <h3>Images</h3>
     <p>
