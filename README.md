@@ -14,7 +14,7 @@ http://eirikb.github.com/pictureit/
 Building the image
 ---
 
-Please see the [online converter](http://eirikb.github.com/pictureit/converter)
+Please see the __[online converter](http://eirikb.github.com/pictureit/converter)__
 
 ### Old java version
 This will create image.png from the textfile
