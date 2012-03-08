@@ -13,6 +13,10 @@ http://eirikb.github.com/pictureit/
 
 Building the image
 ---
+
+Please see the [online converter](http://eirikb.github.com/pictureit/converter)
+
+### Old java version
 This will create image.png from the textfile
 
     java -jar pictureit.jar testfile.txt  
